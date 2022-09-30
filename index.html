@@ -448,18 +448,44 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
      </section>  
    
  </footer>
- 
-<div class="backdrop is-hidden" data-modal>
+ is-hidden
+<div class="backdrop " data-modal>
   <div class="modal">
   <button type="button" class="modal-close-btn" data-modal-close>
   <svg class="modal-close-icon"  >
     <use href="./images/symbol-defs 2.svg#icon-close"></use>
   </svg>
+    </button>
+     <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
+      <form class="modal-form">
+       <label class="model-form-field">
+        І'мя 
+        <input type="text" class="model-form-input" required pattern="(a-zA-Za-яА-ЯіІїЇ)+"/>
+          </label>
+        <label class="modal-form-field">
+       Телефон 
+       <input type=" tel" class="model-form-input" required pattern="(0-9)(3)-(0-9)(3)-(0-9)(2)"
+       title="xxx-xxx-xx-xx"/>
+           </label>
+        <input type=" " class="model-form-input" required/>
+           </label>
+        <label for="">
+      Коментар
+      <textarea name=""  id="" cols="30" rows="10" class="modal-form-message"></textarea>
+         </label>
+        <label for="" class="modal-form-check-field">
+          <input type="checkbox" class="modal-form-check"/>
+          Погоджуюся з розсилкою та <a href="">приймаю Умови договору</a> 
+          <input type=" " class="model-form-input" required/>
+        </label>
 
-  </button>
-    </div>
+        <button type="submit" class=""modal-form-submit>Відправити</button>
+      </form>
+  </div>
 
-</div>
+  </div>
+
+
 </div>
 <script src="./js/modal.js"></script>
 </body>

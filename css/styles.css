@@ -1030,7 +1030,14 @@ cursor: pointer;
   background-color:rgba(0, 0, 0, 0.1) ;
   padding: 0px;
   cursor: pointer;
+}
 
+.modal-form-title{
 
+ font-family:  Roboto, sans-serif sans-serif;
+font size: 20px;
+line height: 1.15;
 
+letter spacing: 0.03em;
+color: #212121; 
 }
