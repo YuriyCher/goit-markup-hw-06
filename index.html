@@ -452,31 +452,82 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
 <div class="backdrop " data-modal>
   <div class="modal">
   <button type="button" class="modal-close-btn" data-modal-close>
-  <svg class="modal-close-icon"  >
+  <svg class="modal-close-icon">
     <use href="./images/symbol-defs 2.svg#icon-close"></use>
   </svg>
     </button>
      <p class="modal-form-title">Залиште свої дані, ми вам передзвонимо</p>
       <form class="modal-form">
-       <label class="model-form-field">
-        І'мя 
-        <input type="text" class="model-form-input" required pattern="(a-zA-Za-яА-ЯіІїЇ)+"/>
+       <label class="modal-form-field">
+         <span class="modal-form-field-desc">І'мя*</span>
+         <div class="modal-form-input-wrapper">
+         
+
+        <input type="text" class="modal-form-input" required pattern="{Aя-Za-яА-ЯіІїЇ}+"
+        name="use_name"
+        placeholder="Юзік"
+        />
+        <span class="modal-form-input-icon"></span> 
+        <use href="./images/svgvo110.svg#icon-untitled2"></use>
+
+
+        </div>
           </label>
+
         <label class="modal-form-field">
-       Телефон 
-       <input type=" tel" class="model-form-input" required pattern="(0-9)(3)-(0-9)(3)-(0-9)(2)"
-       title="xxx-xxx-xx-xx"/>
+       <span class="modal-form-field-desc">Телефон*</span> 
+       <div class="modal-form-input-wrapper">
+       <input type=" tel" class="modal-form-input" required pattern="{0-9}{3}-{0-9}{3}-{0-9}{2}"
+       title="xxx-xxx-xx-xx"
+       name="user_phone"
+       placeholder="050-550-50-50"
+       />
+       <span class="modal-form-input-icon"></span> 
+       <use href="./images/svgvo110.svg@icon-untitled1"> </use>
+
+
+       </div>
            </label>
-        <input type=" " class="model-form-input" required/>
-           </label>
-        <label for="">
-      Коментар
-      <textarea name=""  id="" cols="30" rows="10" class="modal-form-message"></textarea>
-         </label>
+           <label class="modal-form-field">
+       <span class="modal-form-field-desc">Пошта*</span> 
+       <div class="modal-form-input-wrapper">
+        <input type=" " class="modal-form-input" required pattern="{a-zA-Za-яА-ЯіІїЇ}+,
+        {0-9}{3}-{0-9}{3}-{0-9}{2}"
+        name="user_email"
+       placeholder="petrov@ukr.net"
+       />
+       <span class="modal-form-input-icon"></span> 
+       <use href="./images/110/110.svg#icon-icon-check"> </use>
+
+
+       </div>
+       
+  
+      </label>
+
+   <label class="modal-form-field" for="">
+      <span class="modal-form-field-desc">Коментар</span> 
+      <textarea name=""  id="" cols="30" rows="10" class="modal-form-message"
+      name="user_message"
+      placeholder="Введіть текст"
+      
+      ></textarea>
+   </label>
         <label for="" class="modal-form-check-field">
-          <input type="checkbox" class="modal-form-check"/>
-          Погоджуюся з розсилкою та <a href="">приймаю Умови договору</a> 
-          <input type=" " class="model-form-input" required/>
+          <div class="modal-form-input-wrapper"></div>
+
+          <input type="checkbox" class="modal-form-check"
+        name="user_policy"  
+
+          />
+          <span class="modal-form-input-icon"></span> 
+
+  <use href="./images/110/110.svg#></use>
+     
+         
+         </div>
+      Погоджуюся з розсилкою та <a href="">приймаю Умови договору</a> 
+          <!-- <input type=" " class="modal-form-input" required/> -->
         </label>
 
         <button type="submit" class=""modal-form-submit>Відправити</button>
