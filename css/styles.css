@@ -976,7 +976,7 @@ height: 20px;
 fill: 
 #FFFFFF;
 }
-
+/* ===========  backdrop========== */
 .backdrop
 {
   position:fixed;
@@ -1089,8 +1089,46 @@ padding-bottom: 4px;
 
 {
 margin-bottom: 28px;
-
 }
+.modal-form-submit
+{
+  /* position: absolute; */
+  
+
+
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  width: 200px;
+  height: 50px;
+  border-radius: 4px;
+  padding-top: 40px;
+  background-color:
+  #188CE8;
+  Effect: Drop shadow
+  Radius: 4px
+  Offset: 0px, 4px
+  rgba(0, 0, 0, 0.15)
+}
+.title-text,
+.text-title
+{display: flex;
+  flex-direction:;
+align-items: center;
+margin-left: 15px;
+font-family: var(--primary-font);
+color: var(--secondary-text-color-theme-light)
+}
+
+.modal-form-check
+ { position: absolute;
+  display: flex;
+  flex-direction: column;
+align-items: center;
+width: 16px;
+height: 16px;
+}
+
 
 .modal-form-message{
   /* height: 120px; */
@@ -1101,12 +1139,13 @@ margin-bottom: 28px;
 
 .modal-form-input-icon{
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 12px;
+  transform: translateY(-50%);
   
   display: block;
-  width: 15px;
-  height: 15px;
+  width: 12px;
+  height: 12px;
   background-color: var(--accent-color);
 
 }
