@@ -1101,8 +1101,8 @@ padding-bottom: 4px;
 
 .modal-form-field
 
-/* {margin-bottom: 28px; 
-} */
+ {margin-bottom: 10px; 
+} 
 .modal-form-submit
 { 
   
@@ -1193,7 +1193,7 @@ height: 16px;
 .modal-form-input-icon
 {
    position: absolute; 
-   bottom:0px;
+   bottom: 3px;
    left: 12px;
   transform: translateY(-50%);
   display: block;
@@ -1240,7 +1240,11 @@ fill: var(--primary-text-color-theme-light);
 
 .modal-form-check:focus+.modal-form-own-checkbox
 {
-  box-shadow:  
- 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
- border-radius: 0px 0px 4px 4px; 
+  box-shadow: rgba(0, 0, 0, 0.15) Offset: 0px, 4px;
+    fill:#188CE8;
 }
+
+  
+ 
+ 
+ 
