@@ -1251,19 +1251,87 @@ background-color: transparent;
 }
 
   
-.distribution{
-  display: flex;
+.distribution {
+  position: relative;
+ 
+
+ 
+   
+
+
 }
 
 .title-distribution{
-  font-family:Roboto , sans-serif;
+  margin-left: 93px;
+ 
 
-font size: 14px;
-line height: ;
+  font-family:var(--primary-font); 
+  
+  font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+letter-spacing: 0.03em;
+text-transform: uppercase;
 
-letter spacing: 0.03em; 
-color: #FFFFF;
+  color: #ffff;
+  background-color: #2F303A;
+
+
 
 }
  
- 
+.telega-send-icon
+{
+position: absolute;
+width: 24px;
+height: 24px;
+color: #ffff;
+
+}
+
+.modal-distribution-input{
+
+ position: absolute; 
+ top: 50px;
+ left: 93px;
+transform: translateY(-50%);
+
+display: flex;
+
+
+ background-color: #2F303A ;
+
+ width: 358px;
+ height: 50px;
+
+  font-family:var(--primary-font);
+font-size: 16px;
+letter-spacing: 0.03em;
+line-height: 1.25;
+
+fill: rgba(255, 255, 255, 0.6);
+
+}
+.submit-distribution{
+  position: absolute;
+  top: 50px;
+  left: 105px;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 50px;
+  background-color: #2196F3;
+
+  font-family:var(--primary-font) ;
+ font-size: 16px;
+ line-height:1.87;
+ letter-spacing: 0.06em;
+color: #FFFFFF;
+
+}
+
+modal-distribution-input-wrapper
+{
+
+
+
+}
