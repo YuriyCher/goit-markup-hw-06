@@ -1328,17 +1328,22 @@ color: #FFFFFF;
  
 }
 
+
+
+
+
+
+
 .telega-send-icon
 {
-position: absolute;
-top: 10px;
-left: 100px;
-transform: translateY(-50%);
-width: 24px;
-height: 24px;
-color: #ffff; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+ width: 24px;
+height: 24px; 
+ 
 
 }
 .modal-distribution-input-wrapper{
-  position: relative;
-}
+  position: relative;}
