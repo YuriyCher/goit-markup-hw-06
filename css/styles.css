@@ -9,7 +9,7 @@
     --secondary-background-color-theme-light:#F5F4FA; 
     --secondary-background-btn-color-theme-light:#188CE8;
     --transition-dur-and-func:250ms linear;
-  
+    --timing-function:cubic-bezier(0.4, 0, 0.2, 1);
   }
 
 
@@ -1250,25 +1250,18 @@ background-color:transparent;
 {color: #FFFFFF ;
    background-color: #2196F3;
    }
-/* .modal-form-check:checked+.modal-form-own-checkbox{
- 
-} */
 
 
-/* .modal-form-check:+.modal-form-own-checkbox
-{
+   .distribution{
+    margin-left: 93px;
+    display: flex;
+    flex-wrap: wrap;
 
-    
-} */
-
-  
-.distribution {
-  position: relative;
-
-}
+} 
 
 .title-distribution{
-  margin-left: 93px;
+  display: flex;
+  margin-bottom: 20px;
  
 
   font-family:var(--primary-font); 
@@ -1286,51 +1279,53 @@ text-transform: uppercase;
 
 }
  
+.modal-distribution{
+  display: flex;
+    gap: 12px;
+    row-gap: 12px;
+    column-gap: 12px;
+}
 
 
 .modal-distribution-input{
 
- position: absolute; 
- top: 0px;
- left: 93px;
-transform: translateY(-50%);
+  padding: 15px 16px;
+    padding-top: 15px;
+    padding-right: 16px;
+    padding-bottom: 15px;
+    padding-left: 16px;
+    width: 358px;
+    background-color: inherit;
+    outline: transparent;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    color: rgba(255, 255, 255, 0.6)
 
-
-
-
- background-color: #2F303A ;
-
- width: 358px;
- height: 50px;
-
-  font-family:var(--primary-font);
-font-size: 16px;
-letter-spacing: 0.03em;
-line-height: 1.25;
-
-fill: rgba(255, 255, 255, 0.6);
 
 }
 .submit-distribution{
-
-
-  top: 50px;
-  left: 463px;
- 
-  transform: translateY(-50%);
-  width: 200px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  min-width: 200px;
   height: 50px;
-  background-color: #2196F3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  background-color:#2196F3;
+  border-radius: 4px;
+  color: #ffffff;
+  transition-property: background-color, fill;
+  transition-duration:var(--transition-dur-and-func);
+  transition-timing-function:var(--timing-function);
+  cursor: pointer;
 
-  font-family:var(--primary-font) ;
- font-size: 16px;
- line-height:1.87;
- letter-spacing: 0.06em;
-color: #FFFFFF;
- padding-top: 10px;
- padding-left: 28px;
- padding-bottom: 10px;
- padding-right: 62px;
+ 
  
 }
 
@@ -1342,14 +1337,8 @@ color: #FFFFFF;
 
 .telega-send-icon
 {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
- width: 24px;
-height: 24px; 
+ width:24px;
+height:24px;
+color:#FFFFFF;
+ }
  
-
-}
-.modal-distribution-input-wrapper{
-  position: relative;}
