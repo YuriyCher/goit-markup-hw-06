@@ -1145,6 +1145,7 @@ padding-bottom: 4px;
    align-items: center;
    width: 18px;
    height: 18px;
+   
 
 }
 
@@ -1199,7 +1200,7 @@ font-family:Roboto, sans-serif;
   display: block;
   width: 18px;
   height: 18px;
-  border: solid 5px;
+
   transition:fill var(--transition-dur-and-func)
 }
 .modal-form-input-wrapper:focus 
@@ -1223,7 +1224,8 @@ fill: var(--primary-text-color-theme-light);
 
  width: 16px; 
  height: 16px;
- border:1px solid #757575;
+ border: 2px solid #757575;
+ background-color: #757575;
  border-radius: 2px;
  cursor: pointer;
  margin-left: 20px;
