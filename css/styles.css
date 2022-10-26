@@ -380,15 +380,15 @@ box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px
 
     .team-name
      { 
-       font-weight: 500;
-        font-size: 16px;
-        line-height: 1.18;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
    
-    text-align: center;
-    letter-spacing: 0.03em;
-   color:var(--accent-color);
+  text-align: center;
+  letter-spacing: 0.03em;
+  color:var(--accent-color);
    
-   background:var(--primary-text-color-theme-dark);
+  background:var(--primary-text-color-theme-dark);
   }
     
 .team-speciality
@@ -867,15 +867,7 @@ align-items: center;
 
 }
 
-. 
-{display: flex;
-  align-items: center;
-}
-
  
-
-
-
 .post-email
 {
   display: flex;
@@ -1040,7 +1032,7 @@ pointer-events: none;
 
 .modal-form-title
 {
- font-family:Roboto, sans-serif;
+font-family:Roboto, sans-serif;
 font-weight:700; 
 font-size: 20px;
 line-height: 1.15;
@@ -1075,14 +1067,14 @@ transition: border-color var(--transition-dur-and-func) ;
 .modal-form-message
 {
 width: 100%;
- height: 40px;
+height: 40px;
 padding-left: 42px;
 border-radius: 4px;
 
 fill:
 #FFFFFF;
-Effect: Drop shadow
-Radius: 1px
+
+/* Effect: Drop shadow Radius: 1px
 Offset: 0px, 2px
 rgba(0, 0, 0, 0.2)
 Effect: Drop shadow
@@ -1092,7 +1084,7 @@ rgba(0, 0, 0, 0.14)
 Effect: Drop shadow
 Radius: 3px
 Offset: 0px, 1px
-rgba(0, 0, 0, 0.12)
+rgba(0, 0, 0, 0.12) */
 }
 
 .modal-form-field-desc 
@@ -1111,7 +1103,7 @@ padding-bottom: 4px;
 } 
 .modal-form-submit
 { 
-  display: block;
+    display: block;
     align-items: center;
     justify-content: center;
     min-width: 200px;
@@ -1179,7 +1171,7 @@ padding-bottom: 4px;
 }
 
 .titel-contract {
-font-family:Roboto, sans-serif;
+ font-family:Roboto, sans-serif;
 
  font-size: 14px;
  line-height:  1.71;
@@ -1260,10 +1252,10 @@ background-color:transparent;
   font-family:var(--primary-font); 
   
   font-weight: 700;
-font-size: 14px;
-line-height: 1.14;
-letter-spacing: 0.03em;
-text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
 
   color: #ffff;
   background-color: #2F303A;
@@ -1273,13 +1265,13 @@ text-transform: uppercase;
 }
  
 .modal-distribution{
-  display: flex;
+    display: flex;
     gap: 12px;
     row-gap: 12px;
     column-gap: 12px;
 }
 
-
+ 
 .modal-distribution-input{
 
     padding: 15px 16px;
