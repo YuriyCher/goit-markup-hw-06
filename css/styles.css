@@ -1186,7 +1186,7 @@ font-family:Roboto, sans-serif;
 
  letter-spacing: 0.03em;
  color: #757575;
- color: #2196F3; 
+ color: #2196F3;  
 
 }
 
@@ -1194,12 +1194,12 @@ font-family:Roboto, sans-serif;
 {
   position: absolute; 
   
-  bottom: 3px;
+  bottom: 7px;
   left: 12px;
   transform: translateY(-50%);
   display: block;
-  width: 18px;
-  height: 18px;
+  width: 13px;
+  height: 13px;
 
   transition:fill var(--transition-dur-and-func)
 }
@@ -1225,7 +1225,7 @@ fill: var(--primary-text-color-theme-light);
  width: 16px; 
  height: 16px;
  border: 2px solid #757575;
- background-color: #757575;
+ border-color: #757575;
  border-radius: 2px;
  cursor: pointer;
  margin-left: 20px;
@@ -1282,11 +1282,8 @@ text-transform: uppercase;
 
 .modal-distribution-input{
 
-  padding: 15px 16px;
-    padding-top: 15px;
-    padding-right: 16px;
-    padding-bottom: 15px;
-    padding-left: 16px;
+    padding: 15px 16px;
+ 
     width: 358px;
     background-color: inherit;
     outline: transparent;
