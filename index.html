@@ -2,7 +2,7 @@
 <html lang="uk">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>WebStudio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -29,9 +29,9 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
     
      <ul class="list menu">
        <li class="menu-item">
-          <a class="link-port menu-link currentColor current contakt-stil" href="./index.html">Студія </a>
+          <a class="link-port menu-link currentColor current contakt-stil" href="./index.html">Студія</a>
       
-       </svg>
+       
         </li>
             <li class="menu-item">
                <a class="menu-link   link-port" href="./portfolio.html">Портфоліо</a></li>
@@ -41,7 +41,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
   </nav>
     <ul class="list contakt">
       <li class="post-email-link item-contakt"> 
-        <a class="item-contakt contakt-email link-port"href>
+        <a class="item-contakt contakt-email link-port">
         <svg class="post-email-icon">
           <use href="./images/symbol-defs 2.svg#icon-envelope-hover"></use> 
     </svg>
@@ -50,7 +50,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
   </li> 
   
 <li class="contakt-email">
-<a class="item-contakt contakt-email link-port" href>
+<a class="item-contakt contakt-email link-port">
   <svg class="contakt-phone-icon">
 <use href="./images/symbol-defs 2.svg#icon-untitled"></use>
   </svg>
@@ -73,9 +73,9 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
   
   
      <h1 class="title-main">Ефективні рішення для вашого бізнесу</h1>
-       <button class="modal-open-btn button " type="button"data-modal-open >Замовити послугу</button>
+       <button class="modal-open-btn button" type="button" data-modal-open >Замовити послугу</button>
   </div>
-      </div>
+
 </section>
 <section class="benefits section">
   <div class="container">
@@ -129,7 +129,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
   </div>
 </section>
 
-<section class="do-it section"> 
+ <section class="do-it section"> 
   <div class="container">
 
       <h2 class="team-liter">Чим ми займаємося</h2>
@@ -204,7 +204,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
                       </svg >
                      </a>
                     </li>
-
+                  </ul>
         </div>
         </li>
            
@@ -243,7 +243,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
                  </a>
                 </li>
 
- 
+              </ul>
 
           </div>
 
@@ -283,7 +283,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
                  </a>
                 </li>
 
- 
+               </ul>
           </div>
          </li>
 
@@ -325,7 +325,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
                   </svg >
                  </a>
                 </li>
-
+              </ul>
              </div>
         </li>
     </ul>
@@ -382,7 +382,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
           </li>
 
         </ul>
-        </div>
+      
       </div>
      </section>
 
@@ -397,7 +397,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
       
     <div class="foot-top">
       <a class="logo-w link" href="./index.html">
-        <span class="accent-logo ">Web</span>Studio</span></a> 
+        <span class="accent-logo ">Web</span>Studio</a> 
          
       <address>
         <ul class="foot-list list log-name">
@@ -409,7 +409,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
         </ul>
       </address>
     </div>   
-    <div class="join">
+     <div class="join">
         <p class="join-title">Приєднуйтесь</p>
         <ul class="social-list list">
           <li class="social-list-item">
@@ -440,9 +440,9 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
             </svg >
            </a>
           </li>
+        </ul>
 
-
-    </div>
+     </div>
       <div class="distribution">
         <form>
           <label class="title-distribution">Підпишіться на розсилку</label>
@@ -464,12 +464,12 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
       
       </div>
         
- </div>
-     </section>  
-   
+  </div>
+  
+ 
  </footer>
- <!-- is-hidden -->
-<div class="backdrop " data-modal>
+ 
+ <div class="backdrop is-hidden" data-modal>
   <div class="modal">
   <button type="button" class="modal-close-btn" data-modal-close>
   <svg class="modal-close-icon">
@@ -485,9 +485,8 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
          
 
         <input type="text" class="modal-form-input"
-         required pattern="{Aя-Za-яА-ЯіІїЇ}+"name="use_name"
-            placeholder=""
-        />
+         required pattern="{Aя-Za-яА-ЯіІїЇ}"  name="use_name"/>
+
         <svg class="modal-form-input-icon">
            <use href="./images/symbol-defs 2.svg#icon-untitled2 "></use>
 
@@ -498,29 +497,25 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
       <label class="modal-form-field">
        <span class="modal-form-field-desc">Телефон</span> 
          <span class="modal-form-input-wrapper">
-           <input type=" tel" class="modal-form-input" required pattern="{0-9}{3}-{0-9}{3}-{0-9}{2}"
-            title="xxx-xxx-xx-xx" name="user_phone" placeholder=""
+           <input type="tel" class="modal-form-input" required pattern="{0-9}{3}-{0-9}{3}-{0-9}{2}"
+            title="xxx-xxx-xx-xx" name="user_phone"/>
 
-       />
              <svg class="modal-form-input-icon">
-         
-            
-            <use href="./images/symbol-defs 2.svg#icon-trubkatel"> </use>
+ 
+            <use href="./images/symbol-defs 2.svg#icon-trubkatel"></use>
            </svg> 
          </span>
         </label>
            <label class="modal-form-field">
              <span class="modal-form-field-desc">Пошта</span> 
                <span class="modal-form-input-wrapper">
-                 <input type=" " class="modal-form-input" required pattern="{a-zA-Za-яА-ЯіІїЇ}+,
+                 <input type="email" class="modal-form-input" required pattern="{a-zA-Za-яА-ЯіІїЇ}
                    {0-9}{3}-{0-9}{3}-{0-9}{2}"
                     name="user_email"
-                    placeholder=""
-       />
+                />
 
-         <svg class="modal-form-input-icon"
-         height: 18px >
-           <use href="./images/symbol-defs 2.svg#icon-konvert"> </use>
+         <svg class="modal-form-input-icon">
+           <use href="./images/symbol-defs 2.svg#icon-konvert"></use>
        
               </svg> 
        </span>
@@ -528,30 +523,29 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
 
    <label class="modal-form-field">
       <span class="modal-form-field-desc">Коментар</span> 
-      <textarea name=""  id="" cols="30" rows="10" class="modal-form-message"
+     <textarea   cols="30" rows="10" class="modal-form-message"
       name="user_message"
-      placeholder="Введіть текст"
-      
-      ></textarea>
+      placeholder="Введіть текст"> 
+     </textarea>
    </label>
-        <label class="modal-form-check-field">
+    <label class="modal-form-check-field">
         
 
-          <input type="checkbox" class="modal-form-check"
-        name="user_policy" required
+        <input type="checkbox" class="modal-form-check"
+         name="user_policy" required
         />
         <svg class="modal-form-own-checkbox">
       
           <use  class="modal-form-own-checkbox-incon" href="./images/galka-chel.svg#icon-galrf-svg"></use>
       
-             </svg> 
+        </svg> 
 
-     Погоджуюся з розсилкою та приймаю<a class="titel-contract"  href="#"> Умови договору </a>
+      Погоджуюся з розсилкою та приймаю<a class="titel-contract"  href="#"> Умови договору </a>
          
          
       
   
-        </label>
+    </label>
 
         <button type="submit" class="modal-form-submit">Відправити</button>
       </form>
@@ -561,7 +555,7 @@ href="https://cdn.jsdelivr.net/npm/modern-normalize@1.1.0/modern-normalize.min.c
 </div>
 
 
-</div>
+
 <script src="./js/modal.js"></script>
 </body>
 </html>
