@@ -984,7 +984,7 @@ fill:
   visibility: visible;
   pointer-events:  auto; 
   
-  transition: opacity 500ms ease, visibility 500ms ease;
+  transition: opacity 250ms linear, visibility 300ms linear;
   
 }
 
@@ -1027,29 +1027,17 @@ pointer-events: none;
     padding: 0;
     cursor: pointer;
 
-  /* position: absolute; 
-  top: 8px;
-  right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;  
-  
- 
-  color: rgba(0, 0, 0, 0.1) ;
 
-  padding: 0px;
-  cursor: pointer;
-} */
 
+}
+.modal-close-btn:focus{
+
+  fill: #2196F3;
 }
 /* ==============modal-form========== */
 
 .modal-form-title
 {
-
   font-weight: 700;
     font-size: 20px;
     line-height: 1.15;
@@ -1059,13 +1047,6 @@ pointer-events: none;
     margin-top: 40px;
     justify-content: center;
 
-/* font-family:Roboto, sans-serif;
-font-weight:700; 
-font-size: 20px;
-line-height: 1.15;
-letter-spacing: 0.03em;
-color: #212121;
-margin-bottom: 30px; */
 
 }
 .modal-form
@@ -1075,6 +1056,10 @@ margin-bottom: 30px; */
   /* display: flex;
   flex-direction: column; */
 }
+
+.modal-form-check,
+
+.modal-form-message,
 .modal-form-input
 {
 
@@ -1084,38 +1069,20 @@ width: 100%;
 padding-left: 42px;
 border-radius: 4px;
 border-color: rgba(33, 33, 33, 0.2);
-outline: none;
-margin-bottom:28px;
+outline: transparent;
+
 fill:
 #FFFFFF;
 transition: border-color var(--transition-dur-and-func) ;
 }
 
-
-.modal-form-check,
-.modal-form-message
+.modal-form-input
 {
-width: 100%;
-height: 40px;
-padding-left: 42px;
-border-radius: 4px;
-
-fill:
-#FFFFFF;
-
-/* Effect: Drop shadow Radius: 1px
-Offset: 0px, 2px
-rgba(0, 0, 0, 0.2)
-Effect: Drop shadow
-Radius: 1px
-Offset: 0px, 1px
-rgba(0, 0, 0, 0.14)
-Effect: Drop shadow
-Radius: 3px
-Offset: 0px, 1px
-rgba(0, 0, 0, 0.12) */
+margin-bottom:28px;
 }
-/* .modal-form-input-wrapper, */
+
+
+.modal-form-input-wrapper,
 
 .form-field 
 {
@@ -1136,20 +1103,10 @@ rgba(0, 0, 0, 0.12) */
   left: 0;
   transform: translateY(20%);
 
-
-/* display: block;
-font-size:12px;
-color: #757575;
-padding-bottom: 4px; */
-
-
 }
 
-.modal-form-field
-{
- 
-  /* margin-bottom: 10px;  */
-} 
+
+
 .modal-form-submit
 { 
     display: block;
@@ -1187,7 +1144,7 @@ padding-bottom: 4px; */
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: var(--title-text-color);
+  color:var(--secondary-text-color-theme-light);
   top: 0;
   left: 0;
   transform: translateY(-120%);
@@ -1212,10 +1169,11 @@ padding-bottom: 4px; */
 }
 
 
+
   .modal-form-message:focus 
 {
   outline: none;
-  border-color: #2196F3;
+  border: 1px solid #2196F3;
 }
 
 
@@ -1229,6 +1187,7 @@ padding-bottom: 4px; */
   line-height: 1.71;
   letter-spacing: 0.03em;
   color:var(--secondary-text-color-theme-light);
+  padding-top: 20px;
 }
 
 .modal-form-check
@@ -1237,8 +1196,8 @@ padding-bottom: 4px; */
    display: flex;
    flex-direction: column;
    align-items: center;
-   width: 18px;
-   height: 18px;
+   /* width: 18px;
+   height: 18px; */
    
 
 }
@@ -1257,19 +1216,25 @@ padding-bottom: 4px; */
   cursor: pointer;
 
 }
-
+ .form-check
+ {
+  padding-top: 20px;
+ }
 .modal-form-check
 
  {
    position: absolute;
   appearance: none; 
+  
    /* visibility: hidden;   */
 } 
-.modal-form-check:checked +.modal-form-own-checkbox
+.modal-check:checked +.modal-form-own-checkbox
 {color: #FFFFFF ;
    background-color: #2196F3;
    }
- 
+   .modal-check{
+    visibility: hidden;
+   }
 
 .modal-form-input-wrapper
    {
@@ -1293,7 +1258,7 @@ margin: 5px;
 .modal-form-input-icon
 {
   position: absolute;
-  top: 30px;
+  top: 20px;
   left: 12px;
   display: inline-block;
   transform: translateY(-50%);
@@ -1317,19 +1282,18 @@ margin: 5px;
 .modal-form-input:focus 
 {
   outline:none;
-  border-color: #2196F3;
+  border: 1px solid #2196F3;
 }
 
-.modal-form-input:focus +.modal-form-input-icon
+.modal-form-input:focus + .modal-form-input-icon
  {
-fill: var(--primary-text-color-theme-light);
+fill:#2196F3;
 
 }
-
 
 
    .distribution{
-    margin-left: 93px;
+    margin-left:auto;
     display: flex;
     flex-wrap: wrap;
 
